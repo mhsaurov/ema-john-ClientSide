@@ -3,3 +3,25 @@
     top: 0;
     padding: 30px 20px;
 }
+.Clear-btn{
+    width: 100%;
+    display: flex;
+    font-size: 18px;
+    justify-content: center;
+    align-items: center ;
+    padding: 10px 15px;
+    cursor: pointer;
+    color: #fff;
+    background-color: orange;
+    border: none;
+    border-radius: 20px;
+    margin-top: 10px;
+    
+    
+}
+.Clear-btn .btn-clear-text{
+    margin: 0 10px;
+}
+
+
+
