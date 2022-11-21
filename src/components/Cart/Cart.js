@@ -1,10 +1,11 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTrash } from '@fortawesome/free-solid-svg-icons';
-import React from 'react';
+import React, { useContext } from 'react';
 import './Cart.css';
-import { clear } from '@testing-library/user-event/dist/clear';
+import { AuthContext } from '../Context/UserContext';
 
 const Cart = (props) => {
+    const {user} = useContext(AuthContext);
     const { cart,clearcart , children} = props;
     // console.log(cart);
     let total = 0;
@@ -19,7 +20,8 @@ const Cart = (props) => {
     const grandTotal = total + shipping + tax;
     return (
         <div className='cart'>
-            <h4>Order Summary</h4>
+             <p className='bg-orange-600 text-white p-2 rounded-lg mb-5'> <span className='font-bold'>User Email : </span> {user?.email}</p>
+            <h4 className='text-2xl font-bold mb-3'>Order Summary</h4>
             <p>Selected Items: {quantity}</p>
             <p>Total price: ${total}</p>
             <p>Total Shipping: ${shipping}</p>
@@ -29,6 +31,8 @@ const Cart = (props) => {
                         <p className='btn-clear-text'>Clear Cart</p>
                         <FontAwesomeIcon icon={faTrash}></FontAwesomeIcon>
                 </button>
+               
+                
                 {children}
            
         </div>

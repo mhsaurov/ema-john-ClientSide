@@ -1,0 +1,81 @@
+.form-container{
+    width: 500px;
+    height: 700px;
+    left: 476px;
+    top: 184px;
+    margin: 50px auto;
+    border: 1px solid #95A0A7;
+    border-radius: 8px;
+    box-shadow: -15px 15px 0px  #FFE0B3; 
+   
+}
+
+.title{
+    font-family: 'lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 42px;
+/* identical to box height */
+    text-align: center;
+    margin-top: 30px;
+    letter-spacing: 0.0025em;
+    color: #2A414F;
+}
+
+.form-container{
+
+}
+.form-control input{
+    padding-left: 7px;
+    margin: 20px 49px;
+    width: 415px;
+    height: 55px;
+    border: 1px solid #95A0A7;
+    border-radius: 5px;
+}
+
+.btn-login {
+    width: 415px;
+    margin: 20px 49px;
+    cursor: pointer;
+    height: 55px;
+    background: rgba(255, 153, 0, 0.349);
+    border-radius: 10px;   
+   
+}
+.btn-login:hover{
+    transition: 1s ease;
+    background-color: orange;
+}
+.or-style {
+    color: #95A0A7;
+}
+.or-style{
+    max-width: 500px;
+    text-align: center;
+    margin: 50px auto;
+    position: relative;
+}
+.or-style::before{
+    content: '';
+    width: 150px;
+    height: 1px;
+    display: block;
+    background: #95A0A7;
+    position: absolute;
+    top: 50%;
+    left: 15%;
+    
+}
+.or-style::after{
+    content: '';
+    width: 150px;
+    height: 1px;
+    display: block;
+    background: #95A0A7;
+    position: absolute;
+    top: 50%;
+    right: 15%;
+    
+}

@@ -29,7 +29,7 @@ const Order = () => {
               }
                  {
                        
-                        cart.length === 0 && <h2>No items for reviews <Link to= '/'>please shope more</Link></h2>
+                        cart.length === 0 && <h2 className='text-center text-2xl mt-36'>No items for reviews <span className='text-red-500'> <Link to= '/'>please shope more</Link></span></h2>
                     
                     
                  }
@@ -37,6 +37,9 @@ const Order = () => {
             </div>
             <div className='cart-container'>
                 <Cart clearcart={clearcart} cart={cart}> </Cart>
+                <Link className='' to= '/shipping'>
+                    <button className='Clear-btn mb-12 -mr-9  '>Proceed to shipping</button>
+                </Link>
 
             </div>
         </div>
